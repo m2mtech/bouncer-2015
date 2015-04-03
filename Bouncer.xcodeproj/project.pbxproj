@@ -13,6 +13,8 @@
 		5B4729D01ACF1B10004E1D9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4729CF1ACF1B10004E1D9F /* Images.xcassets */; };
 		5B4729D31ACF1B10004E1D9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B4729D11ACF1B10004E1D9F /* LaunchScreen.xib */; };
 		5B4729DF1ACF1B10004E1D9F /* BouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4729DE1ACF1B10004E1D9F /* BouncerTests.swift */; };
+		5B4729EB1ACF1C05004E1D9F /* BouncerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4729EA1ACF1C05004E1D9F /* BouncerBehavior.swift */; };
+		5B4729ED1ACF253A004E1D9F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5B4729EC1ACF253A004E1D9F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5B4729D81ACF1B10004E1D9F /* BouncerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4729DD1ACF1B10004E1D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B4729DE1ACF1B10004E1D9F /* BouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncerTests.swift; sourceTree = "<group>"; };
+		5B4729EA1ACF1C05004E1D9F /* BouncerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerBehavior.swift; sourceTree = "<group>"; };
+		5B4729EC1ACF253A004E1D9F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		5B4729BA1ACF1B10004E1D9F = {
 			isa = PBXGroup;
 			children = (
+				5B4729EC1ACF253A004E1D9F /* README.md */,
 				5B4729C51ACF1B10004E1D9F /* Bouncer */,
 				5B4729DB1ACF1B10004E1D9F /* BouncerTests */,
 				5B4729C41ACF1B10004E1D9F /* Products */,
@@ -79,6 +84,7 @@
 			children = (
 				5B4729C81ACF1B10004E1D9F /* AppDelegate.swift */,
 				5B4729CA1ACF1B10004E1D9F /* ViewController.swift */,
+				5B4729EA1ACF1C05004E1D9F /* BouncerBehavior.swift */,
 				5B4729CC1ACF1B10004E1D9F /* Main.storyboard */,
 				5B4729CF1ACF1B10004E1D9F /* Images.xcassets */,
 				5B4729D11ACF1B10004E1D9F /* LaunchScreen.xib */,
@@ -214,6 +220,8 @@
 			files = (
 				5B4729CB1ACF1B10004E1D9F /* ViewController.swift in Sources */,
 				5B4729C91ACF1B10004E1D9F /* AppDelegate.swift in Sources */,
+				5B4729ED1ACF253A004E1D9F /* README.md in Sources */,
+				5B4729EB1ACF1C05004E1D9F /* BouncerBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +346,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Bouncer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,7 +358,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Bouncer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
